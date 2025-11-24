@@ -32,6 +32,11 @@ function Agence() {
         start: "top 18%",
         end: "top -120%",
         pin: true,
+        pinSpacing: true,
+        pinReparent: true,
+        pinType: "transform",
+        scrub: 1,
+        anticipatePin: 1,
         onUpdate: (elem) => {
           let imageIndex;
 
@@ -49,7 +54,7 @@ function Agence() {
 
   return (
     <div>
-      <div className="section1">
+      <div className="section1 py-1">
         <div
           ref={imageDivRef}
           className="h-[20vw] w-[15vw] overflow-hidden rounded-4xl absolute left-[70vh] top-60"
